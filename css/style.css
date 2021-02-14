@@ -206,12 +206,12 @@ font-weight: normal;
   width: 197px;
   margin-left: 30px;
 }
-.main-header-navigation {
+.header-navigation-main {
   background-color: var(--basik-blue);
   grid-column-start: 1;
   grid-column-end: -1;
 }
-.main-header-navigation ul {
+.header-navigation-main ul {
   list-style: none;
 }
 .header-navigation-item {
