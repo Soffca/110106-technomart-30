@@ -24,7 +24,7 @@ F3F7F8
   --basic-grey: #A9A9A9;
   --basic-greylight: #C5C5C5;
 
-  --cuprum: "Cuprum", Arial, sans-serif;
+  --cuprum: "Cuprum", "Arial", sans-serif;
   --pt-sans: "PT Sans", "Roboto", sans-serif;
 }
 /* Global */
@@ -429,12 +429,11 @@ line-height: 30px;
   border: 3px solid #63A63E;
   border-radius: 2px;
   font-family: var(--cuprum);
-  border-radius: 2px;
+
 }
 
 .button-white:hover {
 border: 3px solid var(--basik-blue);
-border-radius: 2px;
 background-color: var(--basic-white);
 }
 .button-white:active {
@@ -824,12 +823,10 @@ list-style: none;
 }
 .pager-item:hover {
   border: 1px solid var(--basic-greylight);
-  border-radius: 2px;
-}
+  }
 .pager-item:active {
   border: 1px solid var(--basik-red);
-  border-radius: 2px;
-}
+  }
 .pager-item-active {
   background-color: var(--basik-red);
   color: var(--basic-white)
