@@ -14,7 +14,7 @@
   <body class="page-body">
     <header class="main-header">
       <div class="top-header-container">
-      <nav class="header-navigation">
+      <nav class="header-navigation main-container">
         <a class="header-logo" href="index.html" >
           <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип 'Техномарт'">
         </a>
@@ -22,11 +22,11 @@
           <input class="header-search" type="text" name="seach" placeholder="Поиск">
         </form>
         <a class="header-navigation-item bookmark" href="blank.html">Закладки: 0</a>
-        <a class="header-navigation-item basket" href="blank.html">Корзина: 10</a>
+        <a class="header-navigation-item basket basket-full" href="blank.html">Корзина: 10</a>
         <a class="header-navigation-item order" href="blank.html">Оформить заказ</a>
       </nav>
       </div>
-      <div class="bottom-header-container">
+      <div class="bottom-header-container main-container">
       <p class="header-title-company">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <section class="header-contact">
         <h2 class="hidden">Как нас найти</h2>
@@ -44,9 +44,9 @@
         <a class="user-area" href="blank.html">Мои заказы</a>
         <a class="user-area" href="blank.html">Личный кабинет</a>
       </section>
-
-      <nav class="header-navigation-main">
-        <ul>
+    </div>
+      <nav class="header-navigation-main main-container">
+        <ul class="header-navigation-list">
           <li><a class="header-navigation-item" href="index.html">Главная</a></li>
           <li><a class="header-navigation-item" href="blank.html">Компания</a></li>
           <li><a class="header-navigation-item" href="#">Каталог</a></li>
@@ -56,7 +56,7 @@
           <li><a class="header-navigation-item" href="blank.html">Контакты</a></li>
         </ul>
       </nav>
-    </div>
+
     </header>
     <main>
       <div class="main-container">
@@ -78,7 +78,7 @@
         <h1 class="page-title-catalog">Перфораторы</h1>
         <section class="filters">
             <h2 class="filters-title">фильтр:</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                   <legend class="filters-title-item">цена</legend>
                    <label for="min">минимальная цена</label>
@@ -149,7 +149,7 @@
             </ul>
         </section>
         <section class="catalog-goods-list">
-            <h2>Список товаров</h2>
+            <h2 class="hidden">Список товаров</h2>
             <ul class="goods-list">
                 <li class="goods-list-item">
                     <img src="img/catalogitem/6000.png" width="184" height="164" alt="Модель перфоратора BOSCH BFG 6000">
@@ -256,7 +256,7 @@
       </div>
     </div>
     <div class="page-discription-wrapper">
-        <section class="page-discription">
+        <section class="page-discription main-container">
             <h2 class="page-discription-title">пара слов о перфораторах</h2>
             <p class="text-description">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.

@@ -17,7 +17,7 @@
 <body class="page-body">
   <header class="main-header">
     <div class="top-header-container">
-      <nav class="header-navigation">
+      <nav class="header-navigation main-container">
         <a class="header-logo" href="#">
           <img src="img/logo/logo-technomart.svg" width="108" height="18" alt="Логотип 'Техномарт'">
         </a>
@@ -29,7 +29,7 @@
         <a class="header-navigation-item order" href="blank.html">Оформить заказ</a>
       </nav>
     </div>
-    <div class="bottom-header-container">
+    <div class="bottom-header-container main-container">
       <p class="header-title-company">Интернет-магазин строительных материалов<br /> и инструментов для ремонта</p>
       <section class="header-contact">
         <h2 class="hidden">Как нас найти</h2>
@@ -41,8 +41,9 @@
         <a class="login-button login-link" href="blank.html">Войти</a>
         <a class="login-button register-link" href="blank.html">Регистрация</a>
       </section>
-      <nav class="header-navigation-main">
-        <ul>
+    </div>
+      <nav class="header-navigation-main main-container">
+        <ul class="header-navigation-list">
           <li><a class="header-navigation-item" href="">Главная</a></li>
           <li><a class="header-navigation-item" href="blank.html">Компания</a></li>
           <li><a class="header-navigation-item" href="catalog.html">Каталог</a></li>
@@ -52,9 +53,8 @@
           <li><a class="header-navigation-item" href="blank.html">Контакты</a></li>
         </ul>
       </nav>
-    </div>
   </header>
-  <main>
+  <main class="index-content">
     <div class="main-container">
       <h1 class="hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <!-- Класс пока пустой -->
@@ -100,8 +100,10 @@
         <a class="button" href="catalog.html">открыть каталог</a>
       </section>
       <section class="popular-goods">
+        <div class="title-container">
         <h2 class="section-title">Популярные товары</h2>
         <a class="button" href="blank.html">все популярные товары</a>
+        </div>
         <ul class="goods-list">
           <li class="goods-list-item">
             <img src="img/catalogitem/9000.png" width="184" height="164" alt="Модель перфоратора BOSCH BFG 9000">
@@ -143,8 +145,10 @@
         </ul>
       </section>
       <section class="popular-manufacturers">
+        <div class="title-container">
         <h2 class="section-title">Популярные производители</h2>
         <a class="button" href="blank.html">Все производители</a>
+      </div>
         <ul class="popular-manufacturers-list">
           <li>
             <a class="popular-manufacturers-item" href="blank.html">
@@ -197,6 +201,7 @@
           <br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
+        <div class="services-navigation-container">
         <ul class="services-navigation">
           <li class="services-navigation-item services-navigation-item-active">
             <!--ссылки? куда? - оставляем так-->
@@ -209,24 +214,34 @@
             <a href="">Кредит</a>
           </li>
         </ul>
+        <div class="visible">
         <h3 class="section-title">доставка</h3>
         <p class="main-text">Мы с удовольствием доставим ваш товар прямо
+          <br>
           к вашему подъезду совершенно бесплатно!
+          <br>
           Ведь мы неплохо заработаем,
+          <br>
           поднимая его на ваш этаж!</p>
+        </div>
+        </div>
+          <div class="hidden">
         <h3 class="section-title">гарантия</h3>
         <p class="main-text">Если купленный у нас товар поломается или заискрит,
           а также в случае пожара, спровоцированного его возгоранием,
           вы всегда можете быть уверены в нашей
           гарантии. Мы обменяем сгоревший товар на новый.
           Дом уж восстановите как-нибудь сами.</p>
+        </div>
+        <div class="hidden">
         <h3 class="section-title">кредит</h3>
         <p class="main-text">Залезть в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.</p>
-        <a class="button" href="blank.html">отправить заявку</a>
+          <a class="button" href="blank.html">отправить заявку</a>
+        </div>
       </section>
     </div>
-    <div class="company-contacts">
+    <div class="company-contacts main-container">
       <section class="companions">
         <h2 class="section-title-black">компания "техномарт"</h2>
         <p class="main-text">
@@ -328,7 +343,7 @@
         <input class="modal-form-input modal-form-email" type="email" name="user-email" placeholder="email@example.com">
       </label>
       <label class="modal-letter-text">Текст письма
-        <input class="modal-form-input modal-form-text" type="text" name="user-text" placeholder="В свободной форме">
+        <textarea class="modal-form-input modal-form-text" type="text" name="user-text" placeholder="В свободной форме"></textarea>
       </label>
       <div class="button-letter-wrapper">
         <button class="button button-letter" type="submit">отправить</button>
